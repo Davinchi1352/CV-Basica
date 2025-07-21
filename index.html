@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Alexander Vargas Beltrán - Lebenslauf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .photo-container {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .header-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .name {
+            font-size: 2em;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .position {
+            font-size: 1.1em;
+            color: #ecf0f1;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9em;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .profile-text {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 1em;
+        }
+
+        .company {
+            color: #7f8c8d;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+
+        .date {
+            color: #95a5a6;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .job-description {
+            margin-top: 8px;
+            color: #555;
+            line-height: 1.5;
+            font-size: 0.95em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-top: 3px solid #3498db;
+        }
+
+        .skill-category h4 {
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .skill-list {
+            color: #555;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .languages {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .language-item {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .availability-box {
+            background: #e8f5e8;
+            border: 1px solid #27ae60;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+
+        .availability-title {
+            color: #27ae60;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #3498db;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="photo-container">
+                    <img src="foto.jpg" alt="David Alexander Vargas Beltrán">
+                </div>
+                <div class="header-text">
+                    <h1 class="name">David Alexander Vargas Beltrán</h1>
+                    <div class="position">Motivierter Mitarbeiter</div>
+                    <div class="contact-info">
+                        <div class="contact-item">📞 +43 066567088060</div>
+                        <div class="contact-item">✉️ davinchi2531@proton.me</div>
+                        <div class="contact-item">📍 Bruck an der Mur</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h2 class="section-title">Über mich</h2>
+                <div class="profile-text">
+                    Zuverlässiger und motivierter Mitarbeiter aus Kolumbien, seit 5 Monaten in Österreich.
+                    Ich suche eine Arbeitsstelle, um meine Deutschkenntnisse zu verbessern und mich in den
+                    österreichischen Arbeitsmarkt zu integrieren. Ich bin körperlich fit, pünktlich und
+                    bereit, in verschiedenen Bereichen zu arbeiten.
+                </div>
+
+                <div class="availability-box">
+                    <div class="availability-title">Verfügbarkeit</div>
+                    <p><strong>Sofort verfügbar</strong></p>
+                    <p>• Aktuell: Teilzeit (7:00 - 13:00 Uhr möglich)</p>
+                    <p>• Nachtschicht: Vollzeit möglich (19:00 - 06:00 Uhr)</p>
+                    <p>• Ab September 2025: Vollzeit alle Schichten</p>
+                    <p>• Flexibel für Schichtarbeit und Wochenenden</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Berufserfahrung</h2>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Verwaltungsmitarbeiter</div>
+                            <div class="company">Gesundheitssektor - Kolumbien</div>
+                        </div>
+                        <div class="date">2020 - 2024</div>
+                    </div>
+                    <div class="job-description">
+                        • Dokumentenverwaltung und Datenerfassung<br>
+                        • Bearbeitung von Formularen und Anträgen<br>
+                        • Unterstützung bei täglichen Büroaufgaben<br>
+                        • Ablage und Archivierung von Unterlagen<br>
+                        • Einhaltung von Qualitätsstandards
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Büroassistent</div>
+                            <div class="company">Verschiedene Unternehmen - Kolumbien</div>
+                        </div>
+                        <div class="date">2010 - 2020</div>
+                    </div>
+                    <div class="job-description">
+                        • Dateneingabe und Datenpflege<br>
+                        • Verwaltung von Listen und Tabellen<br>
+                        • Unterstützung bei Inventuraufgaben<br>
+                        • Allgemeine Bürotätigkeiten<br>
+                        • Koordination interner Abläufe
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Ausbildung</h2>
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Verwaltungsausbildung</div>
+                            <div class="company">Universidad Cundinamarca - Kolumbien</div>
+                        </div>
+                        <div class="date">2009</div>
+                    </div>
+                    <div class="job-description">
+                        Abgeschlossene Ausbildung im Verwaltungs- und Bürobereich
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="job-title">Deutschkurs B1</div>
+                            <div class="company">Sprachschule Graz</div>
+                        </div>
+                        <div class="date">2024 - laufend</div>
+                    </div>
+                    <div class="job-description">
+                        Aktiv beim Deutschlernen, um meine Kommunikation zu verbessern
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Fähigkeiten</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Persönliche Stärken</h4>
+                        <div class="skill-list">
+                            • Pünktlich und zuverlässig<br>
+                            • Körperlich belastbar<br>
+                            • Teamfähig<br>
+                            • Lernbereit<br>
+                            • Flexibel
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Praktische Fähigkeiten</h4>
+                        <div class="skill-list">
+                            • Ordnung und Sauberkeit<br>
+                            • Computer (Office, SQL, Power BI)<br>
+                            • Geschicklichkeit<br>
+                            • Schnelle Auffassungsgabe<br>
+                            • Organisationstalent
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Arbeitsbereitschaft</h4>
+                        <div class="skill-list">
+                            • Schichtarbeit möglich<br>
+                            • Wochenendarbeit möglich<br>
+                            • Überstunden möglich
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Sprachen</h2>
+                <div class="languages">
+                    <div class="language-item">Spanisch - Muttersprache</div>
+                    <div class="language-item">Deutsch - B1 (lernend)</div>
+                    <div class="language-item">Englisch - Grundkenntnisse</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section-title">Was ich Ihnen biete</h2>
+                <div class="profile-text">
+                    ✓ Sofortige Verfügbarkeit<br>
+                    ✓ Hohe Motivation und Einsatzbereitschaft<br>
+                    ✓ Bereitschaft für verschiedene Tätigkeiten<br>
+                    ✓ Langfristiges Arbeitsverhältnis gewünscht<br>
+                    ✓ Integration in Österreich ist mein Ziel
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
